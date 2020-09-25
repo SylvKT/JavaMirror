@@ -6,7 +6,7 @@ import lombok.var;
 
 import java.lang.reflect.Method;
 
-public class Mirror {
+public abstract class Mirror {
 	@SneakyThrows
 	public static Object callStatic(Class<?> klass, String method, Object... args) {
 		Method m;
